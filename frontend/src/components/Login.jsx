@@ -18,7 +18,7 @@ function Login({ onLogin, onRegister }) {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <div className="bg-slate-300 p-8 rounded-lg shadow-xl w-full max-w-md">
       <h1 className="text-2xl font-bold mb-6 text-center">{isRegistering ? 'สมัครสมาชิก' : 'ล็อกอิน'}</h1>
       <form onSubmit={handleSubmit}>
         <input

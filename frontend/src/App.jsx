@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'; // useState จำสถานะ useEffect ทำเมือเปลี่ยนวถานะ 
 import axios from 'axios';
 import io from 'socket.io-client';
 import Login from './components/Login';
 
-
+//ส่ง Token ไป backend ด้วย socket.Io
 const socket = io('http://localhost:3000');
 
 function App() {
+  //เก็บ token ใน state
   const [token, setToken] = useState(localStorage.getItem('token') || '');
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
 
